@@ -1,0 +1,50 @@
+/* Aboutus Stylesheet */
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('./img/video/shades_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+body{
+  background-image: url('../img/video/shades_bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  color: #fff;
+}
+
+p{
+  color: #35BACC;
+}
+
+.nav-link{
+  color: #fff;
+}
+
+.nav-link:hover, .active{
+  color: rgb(10,179,199);
+}
+
+
+.secondary-text{
+  padding: 0 21% 0 21%;
+}
+.secondary-text h1, .secondary-text p{
+  color: #0E3C53;
+}

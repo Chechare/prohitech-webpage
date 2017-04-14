@@ -1,0 +1,122 @@
+/* Main Stylesheet */
+/*  Extra large devices */
+.container{
+  max-width: 72%;
+}
+
+body{
+  background-image: url('../img/main_background.png');
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+}
+
+nav.navbar{
+  min-height: 108px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0px 2.5%; /* 34px @ 1366px */
+  box-shadow: 0 0 5px 0;
+}
+
+nav.navbar > div{
+  top: auto;
+  min-height: inherit;
+  background-color: #fff;
+  border: solid;
+  border-color: rgb(204, 204, 204);
+  border-width: 9px;
+  background-image: url('../img/logo_prohitech.png');
+  background-size: 270px;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+nav.navbar > div > img{
+  height: inherit;
+  width: inherit;
+  size: 354px 51px;
+}
+
+.navigation{
+  margin-top: 30px;
+}
+
+.nav-link{
+  color: #000;
+}
+
+.nav-link:hover, .active{
+  color: rgb(10,179,199);
+}
+
+.disabled:hover{
+  color:#636c72;
+}
+
+.footer{
+  min-height: 112px;
+  background-color: rgb(10,179,199);
+  box-shadow: 0 0 5px 0;
+  padding: 10px;
+}
+
+.footer a {
+  color: #0E3C53;
+}
+
+.text-abstract{
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(1, 177, 175);
+  background-color: #fff;
+  padding: 4px;
+}
+
+.text-abstract > div{
+  border: solid;
+  border-width: 2px;
+  padding: 6%;
+}
+
+.btn-more{
+  min-width: 142px;
+  color: #fff;
+  background-color: rgb(1, 177, 175);
+  border-radius: 0px;
+}
+
+.btn-more:hover{
+  color: #fff;
+  background-color: rgb(54, 217, 216);
+}
+
+.div-separator{
+  min-height: 112px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  .container{
+    max-width: 100%;
+  }
+
+  .div-separator{
+    min-height: 20px;
+  }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  .container{
+    max-width: 100%;
+  }
+
+  .div-separator{
+    min-height: 20px;
+  }
+}
