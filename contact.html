@@ -51,19 +51,58 @@
     </ul>
   </div>
 
+  <!-- Background video -->
+  <video playsinline autoplay muted loop poster="./img/video/triangles-bg.jpg" id="bgvid">
+    <!--<source src="polina.webm" type="video/webm">-->
+    <source src="./img/video/triangles-video.mp4" type="video/mp4">
+  </video>
+
+
   <!-- Content --->
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-md-2 offset-lg-2 offset-xl-2">
+      <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1">
+        <img class="img-fluid" src="./img/gallery/mano2.png" alt="Peace & Love">
       </div>
     </div>
+
     <div class="div-separator"></div>
+
+    <!-- TODO: Simple contact form (backend)-->
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-md-2 offset-lg-2 offset-xl-2">
-      </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <form id="mail-form" action="mailto:mike@prohitech.net?subject=Feedback">
+            <div class="form-group">
+              <input class="form-control form-control-danger" type="text" id="name" placeholder="Nombre">
+              <!--<div class="form-control-feedback">Por favor introduce tu nombre.</div>-->
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control form-control-danger" id="email" aria-describedby="emailHelp" placeholder="Correo electrónico">
+              <small id="emailHelp" class="form-text text-muted">No compartiremos tu dirección de correo electrónico con nadie más.</small>
+              <!--<div class="form-control-feedback">Introduzca una dirección de correo válida.</div>-->
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="subject" type="text" id="subject" placeholder="Asunto">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="clearfix">
+              <button type="submit" class="btn btn-send-email float-right">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6">
+          <!-- Map goes here -->
+          <div class="col-12 google-map" id="googleMap"></div>
+        </div>
     </div>
     <div class="div-separator"></div>
-    <div class="div-separator"></div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+      <p>Email: mike@prohitech.net</p>
+      <p>Av. Los Rosales 122- 28021, Madrid.</p>
+    </div>
     <div class="div-separator"></div>
   </div>
 
@@ -86,5 +125,8 @@
   </footer>
 
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMPkHlCOUgcWZjF9n498wsC40MVXDVY7A&callback=map"></script>
+
 </body>
 </html>

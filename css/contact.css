@@ -1,0 +1,54 @@
+/* Contact Stylesheet */
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('./img/video/triangles_video.mp4') no-repeat;
+    background-size: cover;
+}
+
+body{
+  background-image: url('../img/video/triangles_bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p{
+  color: #fff;
+}
+
+.nav-link{
+  color: #fff;
+}
+
+.nav-link:hover, .active{
+  color: rgb(10,179,199);
+}
+
+.btn-send-email{
+  color: #fff;
+  background-color: rgba(14, 60, 83, 1);
+  border-radius: 0px;
+}
+
+.btn-send-email:hover{
+  color: #fff;
+  background-color: rgb(42, 131, 176);;
+}
+
+.google-map{
+  width:100%;
+  min-height:310px;
+}
